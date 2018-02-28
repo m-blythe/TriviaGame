@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--link to bootstrap library-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+
+    <!--link to style sheets-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!--link to jquery library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>Trivia Game</title>
@@ -18,48 +24,198 @@
     <div class="jumbotron">
         <h1>Totally Trivial Trivia!</h1>
     </div>
-    <div id>
+    <br>
+    <div>
         <h2>Time Remaining:
-            <span id="counter">30</span>
+            <span id="counter">10</span>
         </h2>
     </div>
-    <div id="first">
-        <p>How many current members are in Dave Matthews Band?</p>
-        <div class="some-class">
-            <input type="radio" class="radio1" name="first" value="3" id="m1" />
-            <label for="3">Three</label>
-            <input type="radio" class="radio1" name="first" value="4" id="m2" />
-            <label for="4">Four</label>
-            <input type="radio" class="radio1" name="first" value="5" id="m3" />
-            <label for="5">Five</label>
-            <input type="radio" class="radio1" name="first" value="6" id="m4" />
-            <label for="6">Six</label>
-            <input type="radio" class="radio1" name="first" value="0" id="m5" />
-            <label for="0">Other</label>
-        </div>
-    </div>
     <br>
     <br>
-    <div id="last">
-        <p>Last Question</p>
-        <div class="last-class">
-            <input type="radio" class="radio10" name="last" value="13" id="m16" />
-            <label for="13">Three</label>
-            <input type="radio" class="radio10" name="last" value="14" id="m26" />
-            <label for="14">Four</label>
-            <input type="radio" class="radio10" name="last" value="15" id="m36" />
-            <label for="15">Five</label>
-            <input type="radio" class="radio10" name="last" value="16" id="m46" />
-            <label for="16">Six</label>
-            <input type="radio" class="radio10" name="last" value="10" id="m56" />
-            <label for="10">Other</label>
+
+    <div class="container">
+
+        <!-- Question 1 - When was the American Kennel Club (AKC) founded. Answer 1884 -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col3">When was the American Kennel Club (AKC) founded?
+                    <div class="row">
+                        <label class="radio-inline">
+                            <input type="radio" class="first" name="yrFounded" id="yrRadio1" value="1884">1884
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="first" name="yrFounded" id="yrRadio2" value="1804">1804
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="first" name="yrFounded" id="yrRadio3" value="1904">1904
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="first" name="yrFounded" id="yrRadio4" value="1925">1925
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="first" name="yrFounded" id="yrRadio5" value="1890">1890
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="first" name="yrFounded" id="yrRadio6" value="1900">1900
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+        <!-- Question 2 - How many breeds are recognized by the AKC?  Answer 190 -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col3">How many breeds are recognized by the AKC?
+                    <div class="row">
+                        <label class="radio-inline">
+                            <input type="radio" class="second" name="breed" id="breedRadio1" value="125">125
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="second"name="breed" id="breedRadio2" value="225">225
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="second"name="breed" id="breedRadio3" value="210">210
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="second"name="breed" id="breedRadio4" value="190">190
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="second"name="breed" id="breedRadio5" value="200">200
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="second"name="breed" id="breedRadio6" value="175">175
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Question 3 - What breed is considered American's most popular dog?  Answer Labrador Retriever -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col3">What breed is considered American's most popular dog?
+                    <div class="row">
+                        <label class="radio-inline">
+                            <input type="radio" class="third" name="popular" id="popRadio1" value="1884">Rottweiler
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="third" name="popular" id="popRadio2" value="1804">German Shepherd
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="third" name="popular" id="popRadio3" value="1904">Labrador Retriever
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="third" name="popular" id="popRadio4" value="1925">Poodle
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="third" name="popular" id="popRadio5" value="1890">Bulldog
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="third" name="popular" id="popRadio6" value="1900">Golden Retriever
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Question 4 - What is the state dog of Louisiana?  Answer Catahoula Leopard Dog -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col3">What is the state dog of Louisiana?
+                    <div class="row">
+                        <label class="radio-inline">
+                            <input type="radio" class="fourth" name="state" id="stRadio1" value="Bloodhound">Bloodhound
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fourth" name="state" id="stRadio2" value="Pit Bull">Pit Bull
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fourth" name="state" id="stRadio3" value="Bulldog">Bulldog
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fourth" name="state" id="stRadio4" value="Bluetick Coonhound">Bluetick Coonhound
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fourth" name="state" id="stRadio5" value="Redbon Coonhound">Redbone Coonhound
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fourth" name="state" id="strRadio6" value="Catahoula Leopard Dog">Catahoula Leopard Dog
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Question 5 - What dog was recognized by the AKC as of January, 2018?  Answer Grand Basset Griffon Vendeen -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col3">What dog was recognized by the AKC as of January, 2018?
+                    <div class="row">
+                        <label class="radio-inline">
+                            <input type="radio" class="fifth" name="newDog" id="newRadio1" value="Komondor">Komondor
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fifth" name="newDog" id="newadio2" value="Braccho Italiano">Braccho Italiano
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fifth" name="newDog" id="newRadio3" value="Grand Basset Griffon Vendeen">Grand Basset Griffon Vendeen
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fifth" name="newDog" id="newRadio4" value="Puli">Puli
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fifth" name="newDog" id="newRadio5" value="Bernese Mountain Dog">Weimeraner
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="fifth" name="newDog" id="newRadio6" value="Briard">Briard
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Question 6 - What group does the Golden Retriever compete in?  Answer Sporting -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col3">What group does the Golden Retriever compete in
+                    <div class="row">
+                        <label class="radio-inline">
+                            <input type="radio" class="last" name="golden" id="goldenRadio1" value="Working">Working
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="last" name="golden" id="goldenRadio2" value="Sporting">Sporting
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="last" name="golden" id="goldenRadio3" value="Herding">Herding
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="last" name="golden" id="goldenRadio4" value="Hound">Hound
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="last" name="golden" id="goldenRadio5" value="Non-Sporting">Non-Sporting
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" class="last" name="golden" id="goldenRadio6" value="Miscellaneous">Miscellaneous
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
 
-
-    <script src="./assets/javascript/app.js"></script>
+    <script src="./assets/javascript/app2.js"></script>
 </body>
 
 </html>

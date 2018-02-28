@@ -1,12 +1,12 @@
 
 /*===============global variables========================*/
 var timeRemain = 10;
-//var timeCounter;
 var newTime = 0;
 var qRightCount = 0;
 var qWrongCount = 0;
 var rightAnswers = ["1884", "190", "Golden Retriever", "Catahoula Leopard Dog", "Grand Basset Griffon Vendeen", "Sporting"]
-var answer 
+var questions = ["yrFounder", ""]
+var answer
 
 /*===============start timer==============================*/
 /*when user answers the first question, the clock will start counting down from 30*/
@@ -34,14 +34,8 @@ function checkAnswer() {
             answer = (d[i].value);
             console.log(answer);
         }
+
     }
-    //check selected answer against correct answer
-if (answer = rightAnswers[i]) {
-        qRightCount + 1;
-    }
-    else { qwrongCount + 1 }
-    console.log("Correct Answers: "+ qRightCount);
-    console.log("Wrong Answers: "+ qWrongCount);
 }
 
 $(".first").click(function () {
