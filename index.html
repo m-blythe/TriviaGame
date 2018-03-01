@@ -21,201 +21,154 @@
 </head>
 
 <body>
-    <div class="jumbotron">
-        <h1>Totally Trivial Trivia!</h1>
-    </div>
-    <br>
-    <div>
-        <h2>Time Remaining:
-            <span id="counter">10</span>
-        </h2>
-    </div>
-    <br>
-    <br>
-
     <div class="container">
-
-        <!-- Question 1 - When was the American Kennel Club (AKC) founded. Answer 1884 -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col3">When was the American Kennel Club (AKC) founded?
-                    <div class="row">
-                        <label class="radio-inline">
-                            <input type="radio" class="first" name="yrFounded" id="yrRadio1" value="1884">1884
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="first" name="yrFounded" id="yrRadio2" value="1804">1804
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="first" name="yrFounded" id="yrRadio3" value="1904">1904
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="first" name="yrFounded" id="yrRadio4" value="1925">1925
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="first" name="yrFounded" id="yrRadio5" value="1890">1890
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="first" name="yrFounded" id="yrRadio6" value="1900">1900
-                        </label>
-                    </div>
-                </div>
-            </div>
+        <div class="jumbotron">
+            <h1>Totally Trivial Trivia!</h1>
         </div>
-
-
-        <!-- Question 2 - How many breeds are recognized by the AKC?  Answer 190 -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col3">How many breeds are recognized by the AKC?
-                    <div class="row">
-                        <label class="radio-inline">
-                            <input type="radio" class="second" name="breed" id="breedRadio1" value="125">125
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="second"name="breed" id="breedRadio2" value="225">225
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="second"name="breed" id="breedRadio3" value="210">210
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="second"name="breed" id="breedRadio4" value="190">190
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="second"name="breed" id="breedRadio5" value="200">200
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="second"name="breed" id="breedRadio6" value="175">175
-                        </label>
-                    </div>
-                </div>
-            </div>
+        <br>
+        <div>
+            <h2>Time Remaining:
+                <span id="counter">10</span>
+            </h2>
         </div>
-
-
-
-        <!-- Question 3 - What breed is considered American's most popular dog?  Answer Labrador Retriever -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col3">What breed is considered American's most popular dog?
-                    <div class="row">
-                        <label class="radio-inline">
-                            <input type="radio" class="third" name="popular" id="popRadio1" value="1884">Rottweiler
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="third" name="popular" id="popRadio2" value="1804">German Shepherd
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="third" name="popular" id="popRadio3" value="1904">Labrador Retriever
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="third" name="popular" id="popRadio4" value="1925">Poodle
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="third" name="popular" id="popRadio5" value="1890">Bulldog
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="third" name="popular" id="popRadio6" value="1900">Golden Retriever
-                        </label>
-                    </div>
-                </div>
+        <section>
+            <div>
+                <span id="rAnswers"></span>
             </div>
-        </div>
-
-
-        <!-- Question 4 - What is the state dog of Louisiana?  Answer Catahoula Leopard Dog -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col3">What is the state dog of Louisiana?
-                    <div class="row">
-                        <label class="radio-inline">
-                            <input type="radio" class="fourth" name="state" id="stRadio1" value="Bloodhound">Bloodhound
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fourth" name="state" id="stRadio2" value="Pit Bull">Pit Bull
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fourth" name="state" id="stRadio3" value="Bulldog">Bulldog
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fourth" name="state" id="stRadio4" value="Bluetick Coonhound">Bluetick Coonhound
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fourth" name="state" id="stRadio5" value="Redbon Coonhound">Redbone Coonhound
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fourth" name="state" id="strRadio6" value="Catahoula Leopard Dog">Catahoula Leopard Dog
-                        </label>
-                    </div>
-                </div>
+            <div>
+                <span id="wAnswers"></span>
             </div>
-        </div>
-
-
-
-        <!-- Question 5 - What dog was recognized by the AKC as of January, 2018?  Answer Grand Basset Griffon Vendeen -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col3">What dog was recognized by the AKC as of January, 2018?
-                    <div class="row">
-                        <label class="radio-inline">
-                            <input type="radio" class="fifth" name="newDog" id="newRadio1" value="Komondor">Komondor
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fifth" name="newDog" id="newadio2" value="Braccho Italiano">Braccho Italiano
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fifth" name="newDog" id="newRadio3" value="Grand Basset Griffon Vendeen">Grand Basset Griffon Vendeen
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fifth" name="newDog" id="newRadio4" value="Puli">Puli
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fifth" name="newDog" id="newRadio5" value="Bernese Mountain Dog">Weimeraner
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="fifth" name="newDog" id="newRadio6" value="Briard">Briard
-                        </label>
-                    </div>
-                </div>
+            <div>
+                <span id="nAnswers"></span>
             </div>
-        </div>
+        </section>
+        <form name="triviaForm">
+            <h3>1. When was the American Kennel Club (AKC) founded?</h3>
+            <label class="radio-inline">
+                <input type="radio" class="q1" name="question1" value="1884" id="q1a"> 1884
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q1" name="question1" value="1890" id="q1b"> 1890
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q1" name="question1" value="1900" id="q1c"> 1900
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q1" name="question1" value="1910" id="q1d"> 1910
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q1" name="question1" value="1800" id="q1e"> 1800
+            </label>
+            <br>
+            <br>
+            <h3>2. How many breeds of dogs are officially recognized by the AKC?</h3>
+            <label class="radio-inline">
+                <input type="radio" class="q2" name="question2" value="125" id="q2a"> 125
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q2" name="question2" value="175" id="q2b"> 175
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q2" name="question2" value="210" id="q2c"> 210
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q2" name="question2" value="190" id="q2d"> 190
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q2" name="question2" value="200" id="q2e"> 200
+            </label>
+            <br>
+            <br>
+            <h3>3. What breed of dog is considered American's most popular?</h3>
+            <label class="radio-inline">
+                <input type="radio" class="q3" name="question3" value="Rottweiler" id="q3a"> Rottweiller
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q3" name="question3" value="German Shepherd" id="q3b"> German Shepherd
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q3" name="question3" value="Labrador Retriever" id="q3c"> Labrador Retriever
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q3" name="question3" value="Poodle" id="q3d"> Poodle
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q3" name="question3" value="Golden Retriever" id="q3e"> Golden Retriever
+            </label>
+            <br>
+            <br>
+            <h3>4. What is the state dog of Louisiana?</h3>
+            <label class="inline-radio">
+                <input type="radio" class="q4" name="question4" value="Bloodhound" id="q4a"> Bloodhound
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q4" name="question4" value="Pit Bull" id="q4b"> Pit Bull
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q4" name="question4" value="Bulldog" id="q4c"> Bulldog
 
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q4" name="question4" value="Redbone Coonhound" id="q4d"> Redbone Coonhound
 
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q4" name="question4" value="Catahoula Leopard Dog" id="q4e"> Catahoula Leopard Dog
 
-        <!-- Question 6 - What group does the Golden Retriever compete in?  Answer Sporting -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col3">What group does the Golden Retriever compete in
-                    <div class="row">
-                        <label class="radio-inline">
-                            <input type="radio" class="last" name="golden" id="goldenRadio1" value="Working">Working
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="last" name="golden" id="goldenRadio2" value="Sporting">Sporting
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="last" name="golden" id="goldenRadio3" value="Herding">Herding
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="last" name="golden" id="goldenRadio4" value="Hound">Hound
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="last" name="golden" id="goldenRadio5" value="Non-Sporting">Non-Sporting
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" class="last" name="golden" id="goldenRadio6" value="Miscellaneous">Miscellaneous
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </label>
+            <br>
+            <br>
+            <h3>5. What dog was recognized by the AKC in January, 2018?</h3>
+            <label class="radio-inline">
+                <input type="radio" class="q5" name="question5" value="Komondor" id="q5a"> Komondor
 
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q5" name="question5" value="Braccho Italiano" id="q5b"> Braccho Italiano
+
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q5" name="question5" value="Grand Basset Griffon Vendeen" id="q5c"> Grand Basset Griffon Vendeen
+
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q5" name="question5" value="Puli" id="q5d"> Puli
+
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q5" name="question5" value="Briard" id="q5e"> Briard
+
+            </label>
+            <br>
+            <br>
+            <h3>6. What group does the Golden Retriever compete in?</h3>
+            <label class="radio-inline">
+                <input type="radio" class="q6" name="question6" value="Working" id="q6a"> Working
+
+            </label>
+            <label class="radio-inline">>
+                <input type="radio" class="q6" name="question6" value="Sporting" id="q6b"> Sporting
+
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q6" name="question6" value="Herding" id="q6c"> Herding
+
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q6" name="question6" value="Hound" id="q6d"> Hound
+
+            </label>
+            <label class="radio-inline">
+                <input type="radio" class="q6" name="question6" value="Non-Sporting" id="q6e"> Non-Sporting
+
+            </label>
+            <br>
+            <br>
+        </form>
+        </section>
     </div>
 
-
-
-    <script src="./assets/javascript/app2.js"></script>
+    <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
