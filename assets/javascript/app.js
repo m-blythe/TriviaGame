@@ -43,9 +43,9 @@ function stopTimer() {
     }
     //
     if (qWrongCount == 1){
-        span = document.getElementById("wAnswers").innerHTML = "You got "+ qWrongCount + " question wrong!";
+        span = document.getElementById("wAnswers").innerHTML = "You got "+ qWrongCount + " question wrong";
     } else {
-        span = document.getElementById("wAnswers").innerHTML = "You got "+ qWrongCount + " questions wrong!";
+        span = document.getElementById("wAnswers").innerHTML = "You got "+ qWrongCount + " questions wrong";
     }
     //
     if((total-qRightCount-qWrongCount)==1){
